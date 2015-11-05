@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_row_recieved"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/initials"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/darkerGray"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDy="4"
+        android:shadowDx="-2"
+        android:shadowRadius="4"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textScaleX=".5"
+        android:textSize="45dp"
+        android:text="WW"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:background="@color/darkerGray"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDy="4"
+            android:shadowDx="-2"
+            android:shadowRadius="4"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true"
+            android:text="Hey guys! Consider yourselves warned!"/>
+
+
+        <EditText
+            android:id="@+id/newContent"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/darkerGray"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDy="4"
+            android:shadowDx="-2"
+            android:shadowRadius="4"
+            android:hint="Type your message here."
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:id="@+id/msgButtonPanel"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkerGray"
+            android:visibility="gone"
+            style="?android:buttonBarStyle">
+
+            <Button
+                android:id="@+id/collapse"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="COLLAPSE"
+                style="?android:buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/reply"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="REPLY"
+                style="?android:buttonBarButtonStyle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/statusPanel"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDy="4"
+            android:shadowDx="-2"
+            android:shadowRadius="4"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textScaleX=".75"
+            android:text="recieved"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDy="4"
+            android:shadowDx="-2"
+            android:shadowRadius="4"
+            android:textAlignment="center"
+            android:textScaleX=".75"
+            android:text="10/24/15" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDy="4"
+            android:shadowDx="-2"
+            android:shadowRadius="4"
+            android:textAlignment="center"
+            android:textScaleX=".75"
+            android:text="20:45" />
+    </LinearLayout>
+
+</LinearLayout>
